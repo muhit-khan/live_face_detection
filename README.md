@@ -11,7 +11,7 @@ This project is a real-time face recognition system that can identify known indi
 ## Folder Structure
 
 ```
-.
+live_face_detection
 ├── .flake8
 ├── .gitignore
 ├── run.sh                  # Main script to run the project
@@ -58,6 +58,7 @@ To add a new person to the recognition system, you need to add one or more photo
 - **Image Naming Convention:** The script extracts the person's name from the image filename. The name is the part of the filename **before the first underscore (`_`)**.
 
   - **Correct Naming:**
+
     - `Elon_Musk_1.jpg` -> Name: `Elon`
     - `Bill_Gates_2.png` -> Name: `Bill`
     - `Jeff_Bezos_3.jpeg` -> Name: `Jeff`
