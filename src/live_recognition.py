@@ -5,7 +5,7 @@ import numpy as np
 from pathlib import Path
 from src.models.person import KnownPerson
 
-ENCODINGS_FILE = Path("src/face_encodings/encodings.pkl")
+ENCODINGS_FILE = Path(__file__).parent / "face_encodings/encodings.pkl"
 
 def live_recognition():
     """Perform live face recognition using the webcam."""

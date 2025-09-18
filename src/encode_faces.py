@@ -9,8 +9,8 @@ from src.models.person import KnownPerson, FaceEncoding
 
 
 # Update this to match your actual directory structure
-SOURCE_IMAGES_DIR = Path("source_images")  # Changed from "src/extracted_images"
-ENCODINGS_FILE = Path("src/face_encodings/encodings.pkl")
+SOURCE_IMAGES_DIR = Path(__file__).parent.parent / "source_images"
+ENCODINGS_FILE = Path(__file__).parent / "face_encodings/encodings.pkl"
 FACE_CASCADE_PATH = cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
 
 
